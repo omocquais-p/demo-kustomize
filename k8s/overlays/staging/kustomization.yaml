@@ -1,0 +1,10 @@
+# kustomization.yaml contents
+resources:
+  - ../../base
+replicas:
+  - name: demo-kustomize
+    count: 2
+images:
+  - name: demo-kustomize
+    newName: demo-kustomize3
+    newTag: 0.0.3-SNAPSHOT

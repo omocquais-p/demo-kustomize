@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo-kustomize
+  name: demo-kustomize
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-kustomize
+  template:
+    metadata:
+      labels:
+        app: demo-kustomize
+    spec:
+      containers:
+      - image: demo-kustomize:0.0.1-SNAPSHOT
+        name: demo-kustomize
+
