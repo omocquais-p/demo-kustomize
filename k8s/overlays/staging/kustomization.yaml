@@ -6,5 +6,5 @@ replicas:
     count: 2
 images:
   - name: demo-kustomize
-    newName: demo-kustomize3
-    newTag: 0.0.3-SNAPSHOT
+    newName: omocquais/spring-demo
+    newTag: :v2
